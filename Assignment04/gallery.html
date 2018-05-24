@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext">
 
+    <script type="text/javascript" src="./main.js"></script>
+
     <script src="./assets/js/require.min.js"></script>
 
     <script>
@@ -71,7 +73,7 @@
           <div class="container">
             <div class="d-flex">
 
-              <a class="header-brand" href="./_form-elements.html" style="margin-left: 48%;margin-top: 0.5em;">
+              <a class="header-brand" onclick="imgPrompt();" href="#" style="margin-left: 48%;margin-top: 0.5em;">
                 <h4>Upload</h4>
               </a>
 
@@ -90,15 +92,15 @@
 
         <div class="my-3 my-md-5">
           <div class="container">
-            <div class="row row-cards">
+            <div class="row row-cards" id="imageCardContainer">
         
 
-              <div class="col-sm-6 col-lg-4 usrImages">
+              <div class="col-sm-6 col-lg-4 usrImages" id="imageCard">
                 <div class="card p-3">
                   <a href="javascript:void(0)" class="mb-3">
-                    <img src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
-                  </a><!-- 
-                  <p calss="caption">Caption here</p> -->
+                    <img id="imageLink" src="./demo/photos/grant-ritchie-338179-500.jpg" alt="Photo by Nathan Guerrero" class="rounded">
+                  </a>
+                  <p id="caption"></p>
                   <div class="d-flex align-items-center px-2">
                     <div class="avatar avatar-md mr-3" style="background-image: url(demo/faces/male/41.jpg)"></div>
                     <div>
