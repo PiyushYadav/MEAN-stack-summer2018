@@ -15,7 +15,7 @@ var imgPrompt = function () {
 		ic.find("#caption").text(caption);
 		ic.find("#username").text(username);
 
-		//3. Change ids of cloned div
+		//3. Change id of cloned card (not necessary)
 		ic.attr("id","A"+i);
 		i++;
 
