@@ -8,19 +8,19 @@ var imgPrompt = function () {
 	if (imgAddr !== "") {
 		
 		// 1. Clone first image card
-		var ic = $("#imageCard").clone(true);
+		var imgCardClone = $("#imageCard").clone(true);
 
 		//2. Change image and caption of cloned card
-		ic.find("img").attr("src",imgAddr);
-		ic.find("#caption").text(caption);
-		ic.find("#username").text(username);
+		imgCardClone.find("img").attr("src",imgAddr);
+		imgCardClone.find("#caption").text(caption);
+		imgCardClone.find("#username").text(username);
 
 		//3. Change id of cloned card (not necessary)
-		ic.attr("id","A"+i);
+		imgCardClone.attr("id","A"+i);
 		i++;
 
 		//4. Prepend the card to parent div
-		$("#imageCardContainer").prepend(ic);
+		$("#imageCardContainer").prepend(imgCardClone);
 
 	}
 }
