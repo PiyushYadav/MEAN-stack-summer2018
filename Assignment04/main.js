@@ -19,8 +19,8 @@ var imgPrompt = function () {
 		ic.attr("id","A"+i);
 		i++;
 
-		//4. Append the card to parent div
-		$("#imageCardContainer").append(ic);
+		//4. Prepend the card to parent div
+		$("#imageCardContainer").prepend(ic);
 
 	}
 }
